@@ -84,7 +84,7 @@ resource "aws_iam_role" "helloWorldEcsTaskExecutionRole" {
 }
 
 resource "aws_iam_role_policy_attachment" "helloWorldEcsTaskExecutionRolePolicy" {
-  role       = aws_iam_role.helloWorldEcsTaskExecutionRole.name
+  role       = aws_iam_role.helloWorldEcsTaskExecutionRole.jeevan
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
